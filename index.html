@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Na Sala Do Pai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Obreiros</h1>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="naturalidade">Naturalidade:</label>
+            <input type="text" id="naturalidade" name="naturalidade" required>
+
+            <label for="nacionalidade">Nacionalidade:</label>
+            <input type="text" id="nacionalidade" name="nacionalidade" required>
+
+            <label for="funcao">Função:</label>
+            <input type="text" id="funcao" name="funcao" required>
+
+            <label for="dataBatismo">Data de Batismo:</label>
+            <input type="date" id="dataBatismo" name="dataBatismo">
+
+            <label for="membroDesde">Membro Desde:</label>
+            <input type="date" id="membroDesde" name="membroDesde" required>
+
+            <label for="igrejaConsagrado">Igreja em que foi Consagrado:</label>
+            <input type="text" id="igrejaConsagrado" name="igrejaConsagrado" required>
+
+            <button type="button" onclick="salvarDados()">Salvar Dados</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</body>
+</html>
